@@ -1,0 +1,384 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #0A0A0A;
+}
+
+.inicio{
+    width: 100%;
+    height: 100%;
+}
+
+html{
+    overflow-y:scroll;
+    scroll-behavior: smooth;
+}
+
+.home{
+    position:absolute;
+    z-index: 9;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+}
+
+.home-bg{
+    width: 100%;
+    height: 100vh;
+    filter: brightness(.7);
+    position: fixed;
+}
+
+h1{
+    font-family: 'Karla', sans-serif;
+    text-decoration: none;
+    font-size: 30px;
+}
+nav{
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: 10.1vh;
+    background: #0A0A0A;
+    position: fixed;
+}
+
+.nav-list{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.nav-item{
+    align-self: center;
+    width: 13vw;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-link{
+    color: #FDF6D2;
+    font-family: 'Merriweather', sans-serif;
+    text-decoration: none;
+}
+
+.volver{
+    position: absolute;
+    z-index: 300;
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    margin-top: 70px;
+}
+
+.flecha{
+    width: 25px;
+    position: fixed;
+    margin-top: 33px;
+
+}
+
+.volver-p{
+    color:#FDF6D2;
+    font-size: 18px;
+    position: fixed;
+    font-family: 'Merriweather', sans-serif;
+    margin-left: 27px;
+    margin-top: 36px;
+}
+
+.home-h2{
+    position: absolute;
+    z-index: 11;
+    align-self: center;
+    color: #FDF6D2;
+    font-weight: 500;
+    font-family: 'Karla', serif;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 15vh;
+    position: fixed;
+    transition: opacity .5s;
+}
+.about-we{
+    width: 100%;
+    height: 100vh;
+    margin-top: 110vh;
+    position: absolute;
+    z-index: 10;
+    background: #0A0A0A;
+}
+
+.our-cafeteria{
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    z-index: 10;
+    transition: opacity .5s;
+    opacity:0;
+}
+
+.oc-h2{
+    position: absolute;
+    z-index: 15;
+    color: #FDF6D2;
+    font-family: 'Karla', serif;
+    margin-top: 10vh;
+    margin-left: 4vw;
+    font-size: 38px;
+    
+}
+.oc-img{
+    position:absolute;
+    z-index: 13;
+    width: 200px;
+    margin-top: 40vh;
+    margin-left: 15vw;
+    filter: brightness(0.6);
+}
+
+.oc-p{
+    position:absolute;
+    z-index: 15;
+    color: #FDF6D2;
+    font-family: 'Merriweather', sans-serif;
+    width: 32vw;
+    margin-top: 20vh;
+    margin-left: 4vw;
+}
+
+.our-products{
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    z-index: 11;
+    display: flex;
+    margin-left: 50%;
+    transition: opacity .5s;
+    opacity:0;
+}
+
+.op-p{
+    position:absolute;
+    z-index: 15;
+    color: #FDF6D2;
+    font-family: 'Merriweather', sans-serif;
+    width: 32vw;
+    margin-top: 55vh;
+    margin-left: 10vw;
+}
+
+.op-img{
+    position: absolute;
+    z-index: 13;
+    width: 300px;
+    margin-top: 15vh;
+    margin-left: 4vw;
+}
+
+.op-h2{
+    position: absolute;
+    z-index: 15;
+    color: #FDF6D2;
+    font-family: 'Karla', serif;
+    margin-top: 44vh;
+    margin-left: 10vw;
+    font-size: 38px;
+}
+
+.contact{
+    width:100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 10;
+    margin-top: 200vh;
+
+}
+
+.contact-div{
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.contact-img{
+    width: 100%;
+    height: 100%;
+    filter: brightness(.7);
+    object-fit: cover;
+}
+
+.c-black{
+    width: 100%;
+    height: 25vh;
+    background: #0A0A0A;
+    margin: 0;
+    position: absolute;
+    z-index: 11;
+
+}
+
+.c-h2{
+    position: absolute;
+    z-index: 12;
+    font-family: 'Karla', serif;
+    margin-top: 15.5vh;
+    color: #FDF6D2;
+    font-size: 70px;
+}
+
+.c-p{
+    margin-top: 31.5vh;
+    color: #FDF6D2;
+    font-family: 'Merriweather', sans-serif;
+    position: absolute;
+    z-index: 12;
+    font-size: 20px;
+    text-align: center;
+}
+
+.c-redes{
+    position: absolute;
+    z-index: 12;
+    margin-top: 40vh;
+}
+
+.c-list{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.c-link{
+    text-decoration: none;
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+
+.c-img{
+    width: 4vw;
+}
+
+.second-p{
+    margin-top: 51vh;
+    color: #FDF6D2;
+    font-family: 'Merriweather', sans-serif;
+    position: absolute;
+    z-index: 12;
+    font-size: 20px;
+    text-align: center;
+}
+
+.mail-button{
+    position: absolute;
+    z-index: 12;
+    margin-top: 58vh;
+    width: 10vw;
+    height: 7vh;
+    background: rgba(0,0,0,0.8);
+    border-radius: 15px;
+}
+
+.mail-link{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-decoration: none;
+}
+
+.mail-text{
+    margin: auto;
+    color: #FDF6D2;
+    font-family: 'Merriweather', sans-serif;
+}
+
+.typed, .cafeteria, .cafe, h1{
+    color: #bd1a18; 
+}
+
+@media screen and (max-width: 835px){
+
+    .home-bg{
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+    }
+    .our-cafeteria{
+        opacity: 1;
+    }
+    .our-products{
+        opacity: 1;
+    }
+    .contact-div{
+        opacity: 1;
+    }
+    .h1{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 675px){
+    .op-img{
+        object-fit: cover;
+        width:90%;
+        object-position: center;
+        margin-left: 10%;
+    }
+    .oc-img{
+        object-fit: cover;
+        width:90%;
+        object-position: center;
+        margin-left: 10%;
+    }
+    .oc-p{
+        margin-top: 25vh;
+    }
+    .op-h2{
+        margin-top:30vh;
+    }
+    .op-p{
+        margin-top:40vh;
+    }
+}
+
+@media screen and (max-width: 418px){
+    .c-h2{
+        font-size: 50px;
+    }
+}
+
+
+@media screen and (max-width: 405px){
+
+    .op-h2{
+        margin-top: 30vh;
+        font-size: 7vw;
+    }
+
+    .oc-h2{
+        font-size: 8vw;
+    }
+
+    .oc-p{
+        font-size: 3.5vw;
+    }
+    .op-p{
+        margin-top:40vh;
+        font-size: 4vw;
+    }
+}
+
+@media screen and (max-width: 300px){
+    .c-h2{
+        font-size: 40px;
+    }
+}
