@@ -1,5 +1,8 @@
 'use strict';
 
+let viewportWidth = window.innerWidth;
+
+if(viewportWidth > 900){
 
 let home = document.querySelector('.home-div');
 
@@ -67,3 +70,4 @@ function desaparecerContact(){
  
 window.addEventListener('scroll',aparecerContact);
 window.addEventListener('scroll',desaparecerContact);
+}
