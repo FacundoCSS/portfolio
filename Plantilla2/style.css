@@ -1,0 +1,327 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+html{
+    overflow-y:scroll;
+    scroll-behavior: smooth;
+}
+
+.inicio{
+    width: 100%;
+    height: 100%;
+}
+
+
+.volver{
+    position: absolute;
+    z-index: 300;
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    margin-top: 16px;
+}
+
+.flecha{
+    width: 25px;
+    position: fixed;
+    margin-top: 33px;
+
+}
+
+.volver-p{
+    color:#FDF6D2;
+    font-size: 18px;
+    position: fixed;
+    font-family: 'Asap', sans-serif;
+    margin-left: 27px;
+    margin-top: 36px;
+}
+
+.home{
+    width: 100%;
+    height: 100vh;
+    background: #131222;
+    display: flex;
+}
+
+.home-bg{
+    width: 100%;
+    height: 100%
+}
+
+.about-we{
+    width: 100%;
+    height: 100vh;
+    background: #242b45;
+}
+
+.about-we-div{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.about-we-bg{
+    width: 100%;
+    height: 100%;
+}
+
+.contact{
+    width: 100%;
+    height: 100vh;
+    background: #be5b3c;
+
+}
+
+.contact-bg{
+    width: 100%;
+    height: 100%;
+}
+
+nav{
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: 30vh;
+}
+
+.nav-link{
+    text-decoration: none;
+}
+
+.nav-list{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.nav-text{
+    color: #f8f0dc;
+    font-family: 'Asap', sans-serif;
+    margin-top: 4vh;
+}
+
+h1{
+    font-family: 'Open Sans', sans-serif;
+    color: #ffc65c;
+    font-size: 90px;
+    margin-top: 20vh;
+    position: absolute;
+}
+
+.home-div{
+    height: 100%;
+    position: absolute;
+    transition: opacity 1s;
+    margin-left: 5vw;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: .5s;
+}
+
+.h2-home{
+    font-family: 'Asap', sans-serif;
+    color: #f8f0dc;
+    margin-top: 45vh;
+    font-weight: 300;
+    font-size: 25px;
+    position: absolute;
+}
+
+.menu-button{
+    width: 130px;
+    height: 7vh;
+    background: rgba(0,0,0,0.6);
+    margin-top: 54vh;
+    position: absolute;
+}
+
+.menu-link{
+    width: 100%;
+    height: 100%;
+    display: flex;  
+    text-decoration: none;  
+}
+
+.menu-text{
+    margin: auto;
+    font-family: 'Asap', sans-serif;
+    color: #f8f0dc;
+}
+
+.about-we-h2{
+    font-family: 'Open Sans', sans-serif;
+    color: #ffc65c;
+    font-size: 60px;
+    margin-top: 5vh;
+    position: absolute;
+}
+
+.about-we-p{
+    font-family: 'Asap', sans-serif;
+    color: #f8f0dc;
+    margin-top: 20vh;
+    font-size: 20px;
+    position: absolute;
+    width: 80vw;
+    text-align: justify;
+}
+
+.contact-div{
+    display: flex;
+    justify-content: center;
+    transition: opacity 1s;
+    width: 60%;
+    margin-left: 40%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.c-h2{
+    position: absolute;
+    z-index: 12;
+    margin-top: 15.5vh;
+    font-family: 'Open Sans', sans-serif;
+    color: #ffc65c;
+    font-size: 60px;
+}
+
+.c-p{
+    margin-top: 31.5vh;
+    font-family: 'Asap', sans-serif;
+    color: #f8f0dc;
+    position: absolute;
+    z-index: 12;
+    font-size: 20px;
+}
+
+.c-redes{
+    position: absolute;
+    z-index: 12;
+    margin-top: 40vh;
+}
+
+.c-list{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.c-link{
+    text-decoration: none;
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+
+.c-img{
+    width: 4vw;
+}
+
+.second-p{
+    margin-top: 51vh;
+    font-family: 'Asap', sans-serif;
+    color: #f8f0dc;
+    position: absolute;
+    z-index: 12;
+    font-size: 20px;
+}
+
+.mail-button{
+    position: absolute;
+    z-index: 12;
+    margin-top: 58vh;
+    width: 10vw;
+    height: 7vh;
+    background: rgba(0,0,0,0.8);
+    border-radius: 15px;
+}
+
+.mail-link{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-decoration: none;
+}
+
+.mail-text{
+    margin: auto;
+    font-family: 'Asap', sans-serif;
+    color: #f8f0dc;
+}
+
+@media screen and (max-width: 835px){
+    .c-h2{
+        font-size: 20px;
+    }
+
+    .home-bg{
+        object-fit: cover;
+        object-position: 80%;
+        width: 100%;
+    }
+    
+    .home-div{
+        width: 80vw;
+        margin-left: 10vw;
+    }
+
+    h1{
+        font-size: 60px;
+    }
+    .h2-home{
+        margin-top: 30vh;
+        text-align: center;
+    }
+    .menu-button{
+        margin-top: 40vh;
+    }
+    .about-we-h2{
+        width: 100%;
+        text-align: center;
+        margin-top: 0;
+    }
+    .about-we-bg{
+        object-fit: cover;
+        object-position: 30%;
+        width: 100%;
+    }
+    .about-we-p{
+        margin-top: 25vh;
+    }
+
+    .contact-bg{
+        object-fit: cover;
+        object-position: 10%;
+        width: 100%;
+    }
+    .contact-div{
+        width: 100%;
+        margin-left: 0;
+    }
+    .c-h2{
+        font-size: 14vw;
+    }
+    .mail-button{
+        width: 100px;
+    }
+    .contact p{
+        text-align: center;
+    }
+    .c-img{
+        width: 40px;
+    }
+}

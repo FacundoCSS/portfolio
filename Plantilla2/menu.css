@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #242b45;
+}
+
+.menu{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 200;
+}
+
+.volver{
+    position: absolute;
+    z-index: 300;
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    margin-top: 6px;
+}
+
+.flecha{
+    width: 25px;
+    position: fixed;
+    margin-top: 3px;
+
+}
+
+.volver-p{
+    font-size: 18px;
+    position: fixed;
+    color: #f8f0dc;
+    font-family: 'Asap', sans-serif;
+    margin-left: 27px;
+    margin-top: 6px;
+}
+
+.menu-div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.menu-bg{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 210;
+}
+
+.home-menu-div{
+    width: 100%;
+    height: 80vh;
+    position: absolute;
+}
+
+.menu-b-bg{
+    position: absolute;
+    z-index: 220;
+    height: 100%;
+    width: 100%;
+    margin-top: 80vh;
+    background: #be5b3c;
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-p{
+    position: absolute;
+    align-self: center;
+    color: #0a0a0a;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+}
+
+
+.menu-text{
+    margin-top: 20vh;
+    position: absolute;
+    z-index: 230;
+    color: #ffc65c;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 40px;
+    margin-left: 4vw;
+}
+
+.grid-container{
+    margin-top: 13vh;
+    margin-bottom: 2vh;
+    width: 100%;
+    display: grid; 
+    grid-template-columns: repeat(3,minmax(100px,200px));
+    grid-gap: 10px;
+    justify-content:space-around;
+    background-color: #be5b3c;
+}
+
+.menu-p{
+    color: #f8f0dc;
+    font-family: 'Asap', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    position: absolute;
+    z-index: 230;
+    margin-top: 40vh;
+    width: 40vw;
+    margin-left: 4vw;
+}
+
+
+.grid-item{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-img{
+    width: 200px;
+    filter: brightness(.6)
+}
+
+.red-line{
+    position: absolute;
+    width: 150px;
+    margin-top: 120px;
+}
+
+.producto{
+    color: #f8f0dc;
+    font-family: 'Asap', sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    position: absolute;
+    margin-top: 85px;
+}
+
+.precio{
+    color: #f8f0dc;
+    font-family: 'Asap', sans-serif;
+    font-weight: 300;
+    position: absolute;
+    margin-top: 150px;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 835px){
+    .menu-bg{
+        object-fit: cover;
+        object-position: 80%;
+        width: 100%;
+    }
+    .menu-text{
+        margin-top: 5vh;
+    }
+    .menu-p{
+        margin-top: 23vh;
+    }
+    .grid-container{
+        grid-template-columns: repeat(2,minmax(100px,200px));
+    }
+}
+
+@media screen and (max-width: 450px){
+    .grid-container{
+        grid-template-columns: repeat(1,minmax(100px,200px));
+    }
+}
